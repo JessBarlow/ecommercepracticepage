@@ -190,7 +190,8 @@ LANDING
 }
 
 header {
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
+  padding-bottom: 125px;
 }
 
 .header__container {
@@ -410,7 +411,11 @@ footer {
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 @media (max-width: 768px) {
   .header__description {
-    padding: 0 24px;
+    padding: 30px 24px;
+  }
+
+  header {
+    padding-bottom: 100px;
   }
 
   h1 {
@@ -436,6 +441,12 @@ footer {
   .btn__menu {
     display: block;
   }
+
+header {
+    padding-bottom: 100px;
+  }
+
+
 
   .nav__links {
     display: none;
